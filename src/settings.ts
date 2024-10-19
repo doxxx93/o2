@@ -71,7 +71,7 @@ export class O2SettingTab extends PluginSettingTab {
     const docusaurus = this.plugin.docusaurus as DocusaurusSettings;
     new Setting(this.containerEl)
       .setName('Docusaurus authors')
-      .setDesc('Enter author(s) for Docusaurus front matter. For multiple authors, separate with commas.')
+      .setDesc('Author(s) for Docusaurus front matter. For multiple authors, separate with commas.')
       .addText(text => text
         .setPlaceholder('jmarcey, slorber')
         .setValue(docusaurus.authors)
